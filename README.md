@@ -8,5 +8,8 @@ Usage - python Unmerge.py <MergedExcel>
 This gives the output of the excel with the cells unmerged.
 
 <b>TableExtraction.py</b>
-The tables are extracted from the Excel sheets and the column names are schema matched and printed. (If there is just one table, the schema match is empty)
+The tables are extracted from the Excel sheets and the column names are schema matched and printed. (If there is just one table, the schema match is empty). This internally uses the following:
+SchemaMatching.py - for matching columns of tables.
+PrintTable.py - for printing the tables in SQLlite.
 Usage - python TableExtraction.py <UnmergedExcel> <MergedExcel>
+
